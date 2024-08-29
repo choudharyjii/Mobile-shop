@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <style>
+        .navbar{
+            background-color: rgb(228, 240, 68);
+            border-radius: 10px;
+        }
+        .navbar ul{ 
+            overflow: auto;
+        }
+        .search{
+           float: left;
+           color: aliceblue;
+           padding: 2px;
+           overflow: auto;
+        }
+        .navbar input{
+            border: 2px solid rgb(12, 12, 12);
+            border-radius: 20px;
+            padding: 3px;
+        }
+        .categories{
+    margin: 70px 0;
+}
+.col-3{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+}
+.col-3 img{
+    width: 100%;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+.col-4{
+    flex-basis: 10%;
+    padding: 10px;
+    min-width: 250px;
+    margin: 30px;
+    transition: transform o.5s;
+    box-shadow: 0 0 20px 0px rgba(0 ,0,0,0.1);
+}
+.col-4 img{
+    width: 100%;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.title{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+    color: #555;
+}
+.title::after {
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+}
+.col-4 p{
+    font-size: 14px;
+}
+.rating .fa{
+    color: rgb(0, 255, 0);
+}
+.col-4:hover{
+    transform: translateY(-5px);
+}
+
+        
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+        <ul>
+                <div class="search"> 
+                    <input type="search" name="search" placeholder="search this site">
+                </div>
+            </ul>
+        </nav>
+    </header> 
+    <!-------featured Product-------->
+<div class="small-container">
+    <h2 class="title">Latest Products</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\i phone.jpg">
+            <h4>I Phone</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$100000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\one plus.jfif" alt="">
+            <h4>one plus</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$30000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo.jpg" alt="">
+            <h4>vivo</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+    </div>
+    <h2 class="title">Featured Product</h2>
+    <div class="row">
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\Realme_1260x960.jpg">
+            <h4>Xiomi</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\samsung.jpg">
+            <h4>Samsung</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\nokiya.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\mi.jpg">
+            <h4>MI</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-regular fa-star-sharp"></i>
+
+            </div>
+            <p>$20000.00</p> 
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\vivo1.jfif">
+            <h4>VIVO</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa-duotone fa-star-sharp"></i>
+
+            </div>
+            <p>$35000.00</p>
+        </div>
+        <div class="col-4">
+            <img src="C:\Users\PAWAN CHOUDHARY\OneDrive\Desktop\PROJECT\mobaile shop\images\images.jfif">
+            <h4>Nokiya</h4>
+            <div class="rating">
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class="fa fa-star" ></i>
+                <i class=" fa fa-star-half-stroke"></i>
+            </div>
+            <p>$45000.00</p> 
+        </div>
+    </div>
+</div>
+  
+</body>
+</div>
+</html>
